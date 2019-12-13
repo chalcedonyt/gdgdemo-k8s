@@ -6,7 +6,6 @@ generatorOptions:
 namePrefix: prod-
 
 patchesStrategicMerge:
-- merges/nginx-backendconfig.yml
 - resource-usage/app.yml
 - resource-usage/nginx.yml
 resources:
@@ -24,4 +23,4 @@ secretGenerator:
 images:
   - name: asia.gcr.io/gdgkl-demo-tim/gdgdemo-app:latest
     newName: asia.gcr.io/gdgkl-demo-tim/gdgdemo-app
-    newTag: a46acf7
+    newTag: 'facdf19'
