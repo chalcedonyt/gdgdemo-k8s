@@ -10,5 +10,4 @@ spec:
       - name: gdg-nginx
         resources:
           requests:
-            cpu: "0.05"
             memory: "128Mi"

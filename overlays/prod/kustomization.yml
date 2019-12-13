@@ -6,6 +6,7 @@ generatorOptions:
 namePrefix: prod-
 
 patchesStrategicMerge:
+- merges/nginx-backendconfig.yml
 - resource-usage/app.yml
 - resource-usage/nginx.yml
 resources:
