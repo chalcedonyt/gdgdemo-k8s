@@ -4,6 +4,7 @@ metadata:
   name: gdg-ingress
   annotations:
     kubernetes.io/ingress.global-static-ip-name: gdg-demo-ip
+    kubernetes.io/ingress.allow-http: "true"
     networking.gke.io/managed-certificates: dev-cert
 spec:
   rules:

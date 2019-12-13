@@ -30,6 +30,9 @@ spec:
         - name: gdg-app
           image: asia.gcr.io/gdgkl-demo-tim/gdgdemo-app:latest
           imagePullPolicy: Always
+          envFrom:
+            - secretRef:
+                name: app-secrets
           ports:
             - containerPort: 8080
           livenessProbe:
@@ -44,6 +47,4 @@ spec:
               port: 8080
             initialDelaySeconds: 5
             timeoutSeconds: 1
-          envFrom:
-            - secretRef:
-                name: app-secrets
+          
