@@ -1,0 +1,16 @@
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: gdg-ingress
+  annotations:
+    kubernetes.io/ingress.global-static-ip-name: gdg-demo-ip
+    networking.gke.io/managed-certificates: dev-cert
+spec:
+  rules:
+  - host: dev.timothyteoh.dev
+    http:
+      paths:
+      - path: /*
+        backend:
+          serviceName: nginx-service
+          servicePort: 8080

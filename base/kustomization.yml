@@ -1,0 +1,12 @@
+resources:
+- templates/app.yml
+- templates/nginx.yml
+
+generatorOptions:
+  annotations:
+    kustomize.generated.resource: 'true'
+
+configMapGenerator:
+- name: nginx-conf
+  files:
+  - configmap-files/nginx.conf

@@ -1,0 +1,14 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: gdg-nginx
+spec:
+  replicas: 1
+  template:
+    spec:
+      containers:
+      - name: gdg-nginx
+        resources:
+          requests:
+            cpu: "0.05"
+            memory: "256Mi"
