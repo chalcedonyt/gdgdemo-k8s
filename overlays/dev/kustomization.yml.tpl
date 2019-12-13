@@ -21,4 +21,4 @@ secretGenerator:
 images:
   - name: asia.gcr.io/gdgkl-demo-tim/gdgdemo-app:latest
     newName: asia.gcr.io/gdgkl-demo-tim/gdgdemo-app
-    newTag: APP_TAG
+    newTag: 'APP_TAG'
