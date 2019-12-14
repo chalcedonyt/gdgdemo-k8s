@@ -23,4 +23,4 @@ secretGenerator:
 images:
   - name: asia.gcr.io/gdgkl-demo-tim/gdgdemo-app:latest
     newName: asia.gcr.io/gdgkl-demo-tim/gdgdemo-app
-    newTag: 'd1cffb5'
+    newTag: '2961f7d'
